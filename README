@@ -1,0 +1,18 @@
+Shows reverse geocoding results of images' locations
+ used for tagging photos with textual location information
+
+== Requirements ==
+exiftool binary needs to be installed.
+
+== Python requirements ==
+sudo pip install geopy
+git clone git://github.com/smarnach/pyexiftool.git
+cd pyexiftool
+python setup.py install
+cd ..
+rm -fr pyexiftool
+
+== Usage ==
+$ printImageTextLocations.py <image file>
+or
+$ printImageTextLocations.py <directory with images>
